@@ -3,11 +3,7 @@ from langchain_ollama import ChatOllama                   # for generation of ai
 from langchain_core.output_parsers import StrOutputParser # For formating output
 
 from langchain_core.prompts import (
-    SystemMessagePromptTemplate,
-    HumanMessagePromptTemplate,
-    AIMessagePromptTemplate,
-    ChatPromptTemplate
-)
+    SystemMessagePromptTemplate, HumanMessagePromptTemplate, AIMessagePromptTemplate, ChatPromptTemplate )
 
 # Custom CSS for Spotify-inspired theme
 st.markdown("""
@@ -86,58 +82,33 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title and caption
-st.title("🧠 DeepSeek Career Coach")
-st.caption("🚀 Your AI Pair to Navigate the Professional Skills")
+st.title("Guru")
+st.caption("Personal Coach Powered by Cutting Edge AI Technology")
 
 # Sidebar configuration
 with st.sidebar:
-    st.header("⚙️ Configuration")
+    st.markdown("""## Model Capabilities
+- Skill Assessment
+- Personalized Learning Path
+- Roadmap Generation""")
     selected_model = st.selectbox(
-        "Choose Model",
-        ["deepseek-r1:1.5b", "deepseek-r1:7b", "deepseek-r1:8B"],
+        "Large Language Model",
+        ["deepseek-r1","Further LLMs Unsupported"],
         index=0
     )
-    st.divider()
-    st.markdown("### Model Capabilities")
-
-
-
-# Main content
 st.markdown("""
-### 🛠️ Skill Enhancement Roadmap for Professionals
-
-Welcome to the **DeepSeek Code Companion**, your personalized AI-powered assistant designed to help you stay ahead in your career. Whether you're looking to learn new skills or deepen your expertise in your current field, we've got you covered.
-
-#### How It Works:
-1. **Skill Assessment**: Based on your current resume, the model will suggest skills that can enhance your professional growth.
-2. **Personalized Learning Path**: If you've already mastered the suggested skills, the model will ask where you want to improve and suggest higher-level concepts.
-3. **Roadmap Generation**: Get a detailed roadmap with descriptions, resources, and milestones to achieve your learning goals.
-
-#### Example Roadmap:
-- **Beginner Level**: 
-  - Learn the basics of Python programming.
-  - Understand data structures and algorithms.
-- **Intermediate Level**:
-  - Dive into web development with frameworks like Django or Flask.
-  - Explore data analysis with Pandas and NumPy.
-- **Advanced Level**:
-  - Master machine learning concepts with TensorFlow or PyTorch.
-  - Learn about cloud computing and deployment with AWS or Azure.
-
-#### Get Started:
-- **Choose a Model**: Select the model that best fits your needs from the sidebar.
-- **Input Your Resume**: Upload your resume to get personalized skill suggestions.
-- **Select Your Focus Area**: Choose the area you want to improve, and let the model generate a detailed roadmap for you.
-
-**Pro Tip**: Regularly update your resume and revisit the model to keep your skills up-to-date with the latest industry trends.
-
+### 
+I am your **Career Companion**, your personalized AI-powered assistant to help you stay ahead at work. 
+Whether you're looking to *learn new skills* or *deepen your expertise* in your current field, I can help you!
 """)
     
-st.divider()
-st.markdown("Supported by [LangChain](https://python.langchain.com/) | [Ollama](https://ollama.ai/)")
+
 
 # Example button for uploading resume
-st.button("📄 Upload Resume")
+st.button("📥 Upload Resume")
 
 # Example button for generating roadmap
-st.button("🛣️ Generate Roadmap")
+st.button("💡 Generate Analysis")
+
+st.divider()
+"Tip 🛠️ : Update your resume to get more insightful results"
