@@ -112,3 +112,11 @@ st.button("💡 Generate Analysis")
 
 st.divider()
 "Tip 🛠️ : Update your resume to get more insightful results"
+
+
+llm_engine=ChatOllama(
+    model=selected_model,
+    base_url="",
+    temperature=0.3
+
+)
