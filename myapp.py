@@ -113,6 +113,7 @@ if uploaded_file:
             st.session_state.resume_text += page.extract_text()
 
 st.divider()
+<<<<<<< HEAD
 st.write("Tip 🛠️ : Update your resume to get more insightful results")
 
 llm_engine = ChatOllama(model=selected_model, base_url="http://localhost:11434", temperature=0.4)
@@ -168,3 +169,14 @@ if user_query:
         ai_response = generate_ai_response(prompt_chain)
     st.session_state.message_log.append({"role": "ai", "content": ai_response})
     st.rerun()
+=======
+"Tip 🛠️ : Update your resume to get more insightful results"
+
+
+llm_engine=ChatOllama(
+    model=selected_model,
+    base_url="",
+    temperature=0.3
+
+)
+>>>>>>> 337d63b6559b2a210b4f2f9533616835ef91daf8
