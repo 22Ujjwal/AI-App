@@ -3,7 +3,7 @@
 ### *DeepThink R1 Build* (sounds like a real estate agent, but it’s way smarter! 😉)  
 
 ---
-
+![alt text](https://github.com/22Ujjwal/AI-App/blob/main/TrustedAllyAI.png)
 #### **How It Works** ✨  
 
 1. **Skill Assessment** 🔍  
