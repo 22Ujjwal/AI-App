@@ -17,4 +17,13 @@
 
 ---
 
-Let’s turn your career journey into a success story! 🌟
+Let’s turn your career journey into a success story! 🌟 
+
+---
+**Steps to Run Program 🏃‍♂️:**
+
+(Make sure Ollama, is actiavted /or add a API key program)
+1. Activate the Venv
+2. Run the file
+3. Your AI-Coach is ready to guide you!
+   
